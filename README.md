@@ -4,19 +4,28 @@ A very simple implementation of the famous [Game Of Life](https://en.wikipedia.o
 
 ## Getting started
 
-1. Clone this repository
+> Note: this application uses the [ncurses](https://crates.io/crates/ncurses) crate that depends on the [ncurses](https://linux.die.net/man/3/ncurses) library.
+
+Install `ncurses`. For example with apt-get package manager:
+
+```shell
+sudo apt-get update 
+sudo apt-get install libncurses5-dev libncursesw5-dev
+```
+
+Clone this repository:
 
 ```shell
 git clone git@github.com:sguimmara/gol.git
 ```
 
-2. build with Cargo
+Build with Cargo:
 
 ```
 cargo build --release
 ```
 
-3. Run the game
+Run the game:
 
 ```
 cargo run
